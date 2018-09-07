@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BCEC42721429DB3009CAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */; };
+		6BCEC42E21429DB5009CAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */; };
+		6BCEC43121429DB5009CAFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */; };
+		6BCEC45C2142B1E2009CAFC0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43A2142B1E2009CAFC0 /* UIView.swift */; };
+		6BCEC45D2142B1E2009CAFC0 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43B2142B1E2009CAFC0 /* NSLayoutConstraint.swift */; };
+		6BCEC45E2142B1E2009CAFC0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43C2142B1E2009CAFC0 /* UIColor.swift */; };
+		6BCEC45F2142B1E2009CAFC0 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43D2142B1E2009CAFC0 /* Layoutable.swift */; };
+		6BCEC4602142B1E2009CAFC0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43E2142B1E2009CAFC0 /* UITableView.swift */; };
+		6BCEC4612142B1E2009CAFC0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC43F2142B1E2009CAFC0 /* String.swift */; };
+		6BCEC4622142B1E2009CAFC0 /* KLAnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4412142B1E2009CAFC0 /* KLAnimatableProtocol.swift */; };
+		6BCEC4632142B1E2009CAFC0 /* KLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4432142B1E2009CAFC0 /* KLTableViewController.swift */; };
+		6BCEC4642142B1E2009CAFC0 /* KLCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4442142B1E2009CAFC0 /* KLCollectionViewController.swift */; };
+		6BCEC4652142B1E2009CAFC0 /* BottomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4452142B1E2009CAFC0 /* BottomCardViewController.swift */; };
+		6BCEC4662142B1E2009CAFC0 /* KLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4462142B1E2009CAFC0 /* KLViewController.swift */; };
+		6BCEC4672142B1E2009CAFC0 /* KLPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4472142B1E2009CAFC0 /* KLPickerViewController.swift */; };
+		6BCEC4682142B1E2009CAFC0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4492142B1E2009CAFC0 /* NetworkManager.swift */; };
+		6BCEC4692142B1E2009CAFC0 /* ValidatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44A2142B1E2009CAFC0 /* ValidatorManager.swift */; };
+		6BCEC46A2142B1E2009CAFC0 /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44B2142B1E2009CAFC0 /* SharingManager.swift */; };
+		6BCEC46B2142B1E2009CAFC0 /* KLAlertViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44C2142B1E2009CAFC0 /* KLAlertViewManager.swift */; };
+		6BCEC46C2142B1E2009CAFC0 /* VersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44D2142B1E2009CAFC0 /* VersionManager.swift */; };
+		6BCEC46D2142B1E2009CAFC0 /* iOSMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44E2142B1E2009CAFC0 /* iOSMessageManager.swift */; };
+		6BCEC46E2142B1E2009CAFC0 /* ScreenSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC44F2142B1E2009CAFC0 /* ScreenSizeManager.swift */; };
+		6BCEC46F2142B1E2009CAFC0 /* PaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4512142B1E2009CAFC0 /* PaperSwitch.swift */; };
+		6BCEC4702142B1E2009CAFC0 /* LargeTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4522142B1E2009CAFC0 /* LargeTitleTableViewCell.swift */; };
+		6BCEC4712142B1E2009CAFC0 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4532142B1E2009CAFC0 /* LoadingOverlay.swift */; };
+		6BCEC4722142B1E2009CAFC0 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4542142B1E2009CAFC0 /* PaddingTextField.swift */; };
+		6BCEC4732142B1E2009CAFC0 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4552142B1E2009CAFC0 /* CircleImageView.swift */; };
+		6BCEC4742142B1E2009CAFC0 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4572142B1E2009CAFC0 /* GenericTableViewController.swift */; };
+		6BCEC4752142B1E2009CAFC0 /* KLActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4592142B1E2009CAFC0 /* KLActivityIndicatorShape.swift */; };
+		6BCEC4762142B1E2009CAFC0 /* KLActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC45A2142B1E2009CAFC0 /* KLActivityIndicatorType.swift */; };
+		6BCEC4772142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC45B2142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift */; };
+		6BCEC4792142B227009CAFC0 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC4782142B227009CAFC0 /* DemoViewController.swift */; };
+		6BCEC47D2142B27B009CAFC0 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC47B2142B27B009CAFC0 /* MenuManager.swift */; };
+		6BCEC47E2142B27B009CAFC0 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC47C2142B27B009CAFC0 /* MenuTableViewController.swift */; };
+		7FFB26B7619DB90716873F71 /* Pods_TEDY_Makeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67B293110237BE704B0636D /* Pods_TEDY_Makeathon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6BCEC42321429DB3009CAFC0 /* TEDY-Makeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEDY-Makeathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BCEC43021429DB5009CAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BCEC43221429DB5009CAFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BCEC43A2142B1E2009CAFC0 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6BCEC43B2142B1E2009CAFC0 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		6BCEC43C2142B1E2009CAFC0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6BCEC43D2142B1E2009CAFC0 /* Layoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
+		6BCEC43E2142B1E2009CAFC0 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		6BCEC43F2142B1E2009CAFC0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6BCEC4412142B1E2009CAFC0 /* KLAnimatableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLAnimatableProtocol.swift; sourceTree = "<group>"; };
+		6BCEC4432142B1E2009CAFC0 /* KLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLTableViewController.swift; sourceTree = "<group>"; };
+		6BCEC4442142B1E2009CAFC0 /* KLCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCollectionViewController.swift; sourceTree = "<group>"; };
+		6BCEC4452142B1E2009CAFC0 /* BottomCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCardViewController.swift; sourceTree = "<group>"; };
+		6BCEC4462142B1E2009CAFC0 /* KLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLViewController.swift; sourceTree = "<group>"; };
+		6BCEC4472142B1E2009CAFC0 /* KLPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLPickerViewController.swift; sourceTree = "<group>"; };
+		6BCEC4492142B1E2009CAFC0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6BCEC44A2142B1E2009CAFC0 /* ValidatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorManager.swift; sourceTree = "<group>"; };
+		6BCEC44B2142B1E2009CAFC0 /* SharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingManager.swift; sourceTree = "<group>"; };
+		6BCEC44C2142B1E2009CAFC0 /* KLAlertViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLAlertViewManager.swift; sourceTree = "<group>"; };
+		6BCEC44D2142B1E2009CAFC0 /* VersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionManager.swift; sourceTree = "<group>"; };
+		6BCEC44E2142B1E2009CAFC0 /* iOSMessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSMessageManager.swift; sourceTree = "<group>"; };
+		6BCEC44F2142B1E2009CAFC0 /* ScreenSizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSizeManager.swift; sourceTree = "<group>"; };
+		6BCEC4512142B1E2009CAFC0 /* PaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperSwitch.swift; sourceTree = "<group>"; };
+		6BCEC4522142B1E2009CAFC0 /* LargeTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeTitleTableViewCell.swift; sourceTree = "<group>"; };
+		6BCEC4532142B1E2009CAFC0 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		6BCEC4542142B1E2009CAFC0 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		6BCEC4552142B1E2009CAFC0 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		6BCEC4572142B1E2009CAFC0 /* GenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		6BCEC4592142B1E2009CAFC0 /* KLActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		6BCEC45A2142B1E2009CAFC0 /* KLActivityIndicatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLActivityIndicatorType.swift; sourceTree = "<group>"; };
+		6BCEC45B2142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		6BCEC4782142B227009CAFC0 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		6BCEC47B2142B27B009CAFC0 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		6BCEC47C2142B27B009CAFC0 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		766782F1F9B6CBC888A4F771 /* Pods-TEDY-Makeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDY-Makeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEDY-Makeathon/Pods-TEDY-Makeathon.debug.xcconfig"; sourceTree = "<group>"; };
+		F67B293110237BE704B0636D /* Pods_TEDY_Makeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEDY_Makeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3EC6BD3DDF925FAD75D491 /* Pods-TEDY-Makeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDY-Makeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEDY-Makeathon/Pods-TEDY-Makeathon.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BCEC42021429DB3009CAFC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFB26B7619DB90716873F71 /* Pods_TEDY_Makeathon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BCEC41A21429DB3009CAFC0 = {
+			isa = PBXGroup;
+			children = (
+				6BCEC42521429DB3009CAFC0 /* TEDY-Makeathon */,
+				6BCEC42421429DB3009CAFC0 /* Products */,
+				7591D7DB744B3E1B59651A06 /* Pods */,
+				6C062C5BF0E3BCF65F645748 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BCEC42421429DB3009CAFC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC42321429DB3009CAFC0 /* TEDY-Makeathon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BCEC42521429DB3009CAFC0 /* TEDY-Makeathon */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */,
+				6BCEC4382142B1E2009CAFC0 /* Library */,
+				6BCEC47A2142B261009CAFC0 /* Home */,
+				6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */,
+				6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */,
+				6BCEC43221429DB5009CAFC0 /* Info.plist */,
+			);
+			path = "TEDY-Makeathon";
+			sourceTree = "<group>";
+		};
+		6BCEC4382142B1E2009CAFC0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4392142B1E2009CAFC0 /* Extension */,
+				6BCEC4402142B1E2009CAFC0 /* Protocol */,
+				6BCEC4422142B1E2009CAFC0 /* Controller */,
+				6BCEC4482142B1E2009CAFC0 /* Manager */,
+				6BCEC4502142B1E2009CAFC0 /* View */,
+				6BCEC4562142B1E2009CAFC0 /* Generic */,
+				6BCEC4582142B1E2009CAFC0 /* KLActivityIndicator */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		6BCEC4392142B1E2009CAFC0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC43A2142B1E2009CAFC0 /* UIView.swift */,
+				6BCEC43B2142B1E2009CAFC0 /* NSLayoutConstraint.swift */,
+				6BCEC43C2142B1E2009CAFC0 /* UIColor.swift */,
+				6BCEC43D2142B1E2009CAFC0 /* Layoutable.swift */,
+				6BCEC43E2142B1E2009CAFC0 /* UITableView.swift */,
+				6BCEC43F2142B1E2009CAFC0 /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6BCEC4402142B1E2009CAFC0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4412142B1E2009CAFC0 /* KLAnimatableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6BCEC4422142B1E2009CAFC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4432142B1E2009CAFC0 /* KLTableViewController.swift */,
+				6BCEC4442142B1E2009CAFC0 /* KLCollectionViewController.swift */,
+				6BCEC4452142B1E2009CAFC0 /* BottomCardViewController.swift */,
+				6BCEC4462142B1E2009CAFC0 /* KLViewController.swift */,
+				6BCEC4472142B1E2009CAFC0 /* KLPickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6BCEC4482142B1E2009CAFC0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4492142B1E2009CAFC0 /* NetworkManager.swift */,
+				6BCEC44A2142B1E2009CAFC0 /* ValidatorManager.swift */,
+				6BCEC44B2142B1E2009CAFC0 /* SharingManager.swift */,
+				6BCEC44C2142B1E2009CAFC0 /* KLAlertViewManager.swift */,
+				6BCEC44D2142B1E2009CAFC0 /* VersionManager.swift */,
+				6BCEC44E2142B1E2009CAFC0 /* iOSMessageManager.swift */,
+				6BCEC44F2142B1E2009CAFC0 /* ScreenSizeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6BCEC4502142B1E2009CAFC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4512142B1E2009CAFC0 /* PaperSwitch.swift */,
+				6BCEC4522142B1E2009CAFC0 /* LargeTitleTableViewCell.swift */,
+				6BCEC4532142B1E2009CAFC0 /* LoadingOverlay.swift */,
+				6BCEC4542142B1E2009CAFC0 /* PaddingTextField.swift */,
+				6BCEC4552142B1E2009CAFC0 /* CircleImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BCEC4562142B1E2009CAFC0 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4572142B1E2009CAFC0 /* GenericTableViewController.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		6BCEC4582142B1E2009CAFC0 /* KLActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC4592142B1E2009CAFC0 /* KLActivityIndicatorShape.swift */,
+				6BCEC45A2142B1E2009CAFC0 /* KLActivityIndicatorType.swift */,
+				6BCEC45B2142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift */,
+			);
+			path = KLActivityIndicator;
+			sourceTree = "<group>";
+		};
+		6BCEC47A2142B261009CAFC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEC47B2142B27B009CAFC0 /* MenuManager.swift */,
+				6BCEC47C2142B27B009CAFC0 /* MenuTableViewController.swift */,
+				6BCEC4782142B227009CAFC0 /* DemoViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C062C5BF0E3BCF65F645748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F67B293110237BE704B0636D /* Pods_TEDY_Makeathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7591D7DB744B3E1B59651A06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766782F1F9B6CBC888A4F771 /* Pods-TEDY-Makeathon.debug.xcconfig */,
+				FC3EC6BD3DDF925FAD75D491 /* Pods-TEDY-Makeathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BCEC42221429DB3009CAFC0 /* TEDY-Makeathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCEC43521429DB5009CAFC0 /* Build configuration list for PBXNativeTarget "TEDY-Makeathon" */;
+			buildPhases = (
+				9BA567954D276B6EC0769096 /* [CP] Check Pods Manifest.lock */,
+				6BCEC41F21429DB3009CAFC0 /* Sources */,
+				6BCEC42021429DB3009CAFC0 /* Frameworks */,
+				6BCEC42121429DB3009CAFC0 /* Resources */,
+				B7F28415B6C54CF7E66C34FC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEDY-Makeathon";
+			productName = "TEDY-Makeathon";
+			productReference = 6BCEC42321429DB3009CAFC0 /* TEDY-Makeathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BCEC41B21429DB3009CAFC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = KL;
+				TargetAttributes = {
+					6BCEC42221429DB3009CAFC0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 6BCEC41E21429DB3009CAFC0 /* Build configuration list for PBXProject "TEDY-Makeathon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BCEC41A21429DB3009CAFC0;
+			productRefGroup = 6BCEC42421429DB3009CAFC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BCEC42221429DB3009CAFC0 /* TEDY-Makeathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BCEC42121429DB3009CAFC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCEC43121429DB5009CAFC0 /* LaunchScreen.storyboard in Resources */,
+				6BCEC42E21429DB5009CAFC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BA567954D276B6EC0769096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TEDY-Makeathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F28415B6C54CF7E66C34FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TEDY-Makeathon/Pods-TEDY-Makeathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEDY-Makeathon/Pods-TEDY-Makeathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BCEC41F21429DB3009CAFC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCEC46E2142B1E2009CAFC0 /* ScreenSizeManager.swift in Sources */,
+				6BCEC4722142B1E2009CAFC0 /* PaddingTextField.swift in Sources */,
+				6BCEC4672142B1E2009CAFC0 /* KLPickerViewController.swift in Sources */,
+				6BCEC4772142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift in Sources */,
+				6BCEC4752142B1E2009CAFC0 /* KLActivityIndicatorShape.swift in Sources */,
+				6BCEC4632142B1E2009CAFC0 /* KLTableViewController.swift in Sources */,
+				6BCEC45C2142B1E2009CAFC0 /* UIView.swift in Sources */,
+				6BCEC4642142B1E2009CAFC0 /* KLCollectionViewController.swift in Sources */,
+				6BCEC46C2142B1E2009CAFC0 /* VersionManager.swift in Sources */,
+				6BCEC4792142B227009CAFC0 /* DemoViewController.swift in Sources */,
+				6BCEC4652142B1E2009CAFC0 /* BottomCardViewController.swift in Sources */,
+				6BCEC4732142B1E2009CAFC0 /* CircleImageView.swift in Sources */,
+				6BCEC4712142B1E2009CAFC0 /* LoadingOverlay.swift in Sources */,
+				6BCEC4762142B1E2009CAFC0 /* KLActivityIndicatorType.swift in Sources */,
+				6BCEC46D2142B1E2009CAFC0 /* iOSMessageManager.swift in Sources */,
+				6BCEC45E2142B1E2009CAFC0 /* UIColor.swift in Sources */,
+				6BCEC47D2142B27B009CAFC0 /* MenuManager.swift in Sources */,
+				6BCEC46A2142B1E2009CAFC0 /* SharingManager.swift in Sources */,
+				6BCEC45F2142B1E2009CAFC0 /* Layoutable.swift in Sources */,
+				6BCEC4742142B1E2009CAFC0 /* GenericTableViewController.swift in Sources */,
+				6BCEC47E2142B27B009CAFC0 /* MenuTableViewController.swift in Sources */,
+				6BCEC45D2142B1E2009CAFC0 /* NSLayoutConstraint.swift in Sources */,
+				6BCEC4622142B1E2009CAFC0 /* KLAnimatableProtocol.swift in Sources */,
+				6BCEC46B2142B1E2009CAFC0 /* KLAlertViewManager.swift in Sources */,
+				6BCEC4612142B1E2009CAFC0 /* String.swift in Sources */,
+				6BCEC4682142B1E2009CAFC0 /* NetworkManager.swift in Sources */,
+				6BCEC4692142B1E2009CAFC0 /* ValidatorManager.swift in Sources */,
+				6BCEC42721429DB3009CAFC0 /* AppDelegate.swift in Sources */,
+				6BCEC46F2142B1E2009CAFC0 /* PaperSwitch.swift in Sources */,
+				6BCEC4602142B1E2009CAFC0 /* UITableView.swift in Sources */,
+				6BCEC4702142B1E2009CAFC0 /* LargeTitleTableViewCell.swift in Sources */,
+				6BCEC4662142B1E2009CAFC0 /* KLViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BCEC43021429DB5009CAFC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BCEC43321429DB5009CAFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BCEC43421429DB5009CAFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BCEC43621429DB5009CAFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766782F1F9B6CBC888A4F771 /* Pods-TEDY-Makeathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 26Z79RZT8A;
+				INFOPLIST_FILE = "TEDY-Makeathon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KL.TEDY-Makeathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ed3c6ecd-c1ef-42e6-a869-329300a68558";
+				PROVISIONING_PROFILE_SPECIFIER = TEDYDevPP;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6BCEC43721429DB5009CAFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3EC6BD3DDF925FAD75D491 /* Pods-TEDY-Makeathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TEDY-Makeathon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KL.TEDY-Makeathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BCEC41E21429DB3009CAFC0 /* Build configuration list for PBXProject "TEDY-Makeathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCEC43321429DB5009CAFC0 /* Debug */,
+				6BCEC43421429DB5009CAFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCEC43521429DB5009CAFC0 /* Build configuration list for PBXNativeTarget "TEDY-Makeathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCEC43621429DB5009CAFC0 /* Debug */,
+				6BCEC43721429DB5009CAFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BCEC41B21429DB3009CAFC0 /* Project object */;
+}
