@@ -16,6 +16,7 @@ class DemoViewController: KLViewController, MenuTableViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        menuManager.setDelegate(delegate: self)
         initNavigation()
     }
     

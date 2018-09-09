@@ -18,7 +18,9 @@ private extension MenuTableViewController {
         
         switch rowType {
         case .iBeacon:
-            return UIViewController()
+            return iBeaconViewController()
+        case .kmb:
+            return KMBSearchViewController()
         }
     }
 }
@@ -28,9 +30,10 @@ class MenuTableViewController: KLTableViewController {
     // MARK: - Practice data
     enum Row: String {
         case iBeacon = "iBeacon"
+        case kmb = "KMB"
     }
     
-    var rows: [Row] = [.iBeacon]
+    var rows: [Row] = [.iBeacon, .kmb]
     var delegate: MenuTableViewControllerDelegate?
     
     // MARK: - Life cycle

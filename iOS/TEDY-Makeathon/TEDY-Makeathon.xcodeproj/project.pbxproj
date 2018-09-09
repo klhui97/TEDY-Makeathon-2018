@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA47DC72144D9DA004CE427 /* kmbData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA47DB92144D9DA004CE427 /* kmbData.json */; };
+		6BA47DC82144D9DA004CE427 /* KMBETAClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBB2144D9DA004CE427 /* KMBETAClient.swift */; };
+		6BA47DC92144D9DA004CE427 /* KMBStopsInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBD2144D9DA004CE427 /* KMBStopsInformationTableViewController.swift */; };
+		6BA47DCA2144D9DA004CE427 /* KMBSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBE2144D9DA004CE427 /* KMBSearchViewController.swift */; };
+		6BA47DCB2144D9DA004CE427 /* KMBDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBF2144D9DA004CE427 /* KMBDataManager.swift */; };
+		6BA47DCC2144D9DA004CE427 /* KMBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DC12144D9DA004CE427 /* KMBData.swift */; };
+		6BA47DCD2144D9DA004CE427 /* ETATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DC32144D9DA004CE427 /* ETATableViewCell.swift */; };
+		6BA47DCE2144D9DA004CE427 /* KMBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DC52144D9DA004CE427 /* KMBClient.swift */; };
+		6BA47DCF2144D9DA004CE427 /* KMBClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DC62144D9DA004CE427 /* KMBClientModel.swift */; };
+		6BA47DD22144DDCD004CE427 /* iBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DD12144DDCD004CE427 /* iBeaconViewController.swift */; };
+		6BA47DD42144E8E5004CE427 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DD32144E8E5004CE427 /* BeaconManager.swift */; };
+		6BA47DD621450268004CE427 /* BeaconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DD521450268004CE427 /* BeaconModel.swift */; };
+		6BA47DDB21451281004CE427 /* BeaconInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DDA21451281004CE427 /* BeaconInfoTableViewCell.swift */; };
+		6BA47DDE21452720004CE427 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DDD21452720004CE427 /* DateHelper.swift */; };
 		6BCEC42721429DB3009CAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */; };
 		6BCEC42E21429DB5009CAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */; };
 		6BCEC43121429DB5009CAFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */; };
@@ -45,6 +59,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BA47DB92144D9DA004CE427 /* kmbData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kmbData.json; sourceTree = "<group>"; };
+		6BA47DBB2144D9DA004CE427 /* KMBETAClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBETAClient.swift; sourceTree = "<group>"; };
+		6BA47DBD2144D9DA004CE427 /* KMBStopsInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBStopsInformationTableViewController.swift; sourceTree = "<group>"; };
+		6BA47DBE2144D9DA004CE427 /* KMBSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBSearchViewController.swift; sourceTree = "<group>"; };
+		6BA47DBF2144D9DA004CE427 /* KMBDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBDataManager.swift; sourceTree = "<group>"; };
+		6BA47DC12144D9DA004CE427 /* KMBData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBData.swift; sourceTree = "<group>"; };
+		6BA47DC32144D9DA004CE427 /* ETATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETATableViewCell.swift; sourceTree = "<group>"; };
+		6BA47DC52144D9DA004CE427 /* KMBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBClient.swift; sourceTree = "<group>"; };
+		6BA47DC62144D9DA004CE427 /* KMBClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBClientModel.swift; sourceTree = "<group>"; };
+		6BA47DD12144DDCD004CE427 /* iBeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconViewController.swift; sourceTree = "<group>"; };
+		6BA47DD32144E8E5004CE427 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		6BA47DD521450268004CE427 /* BeaconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconModel.swift; sourceTree = "<group>"; };
+		6BA47DDA21451281004CE427 /* BeaconInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6BA47DDD21452720004CE427 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		6BCEC42321429DB3009CAFC0 /* TEDY-Makeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEDY-Makeathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +126,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BA47DB82144D9DA004CE427 /* KMB Data */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DB92144D9DA004CE427 /* kmbData.json */,
+				6BA47DBA2144D9DA004CE427 /* KMB ETA Client */,
+				6BA47DBC2144D9DA004CE427 /* Controller */,
+				6BA47DBF2144D9DA004CE427 /* KMBDataManager.swift */,
+				6BA47DC02144D9DA004CE427 /* Model */,
+				6BA47DC22144D9DA004CE427 /* View */,
+				6BA47DC42144D9DA004CE427 /* KMB Client */,
+			);
+			path = "KMB Data";
+			sourceTree = "<group>";
+		};
+		6BA47DBA2144D9DA004CE427 /* KMB ETA Client */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DBB2144D9DA004CE427 /* KMBETAClient.swift */,
+			);
+			path = "KMB ETA Client";
+			sourceTree = "<group>";
+		};
+		6BA47DBC2144D9DA004CE427 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DBD2144D9DA004CE427 /* KMBStopsInformationTableViewController.swift */,
+				6BA47DBE2144D9DA004CE427 /* KMBSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6BA47DC02144D9DA004CE427 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DC12144D9DA004CE427 /* KMBData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BA47DC22144D9DA004CE427 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DC32144D9DA004CE427 /* ETATableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BA47DC42144D9DA004CE427 /* KMB Client */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DC52144D9DA004CE427 /* KMBClient.swift */,
+				6BA47DC62144D9DA004CE427 /* KMBClientModel.swift */,
+			);
+			path = "KMB Client";
+			sourceTree = "<group>";
+		};
+		6BA47DD02144DD9B004CE427 /* iBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DD92145126D004CE427 /* views */,
+				6BA47DD821450EA1004CE427 /* manager */,
+				6BA47DD721450E97004CE427 /* model */,
+				6BA47DD12144DDCD004CE427 /* iBeaconViewController.swift */,
+			);
+			path = iBeacon;
+			sourceTree = "<group>";
+		};
+		6BA47DD721450E97004CE427 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DD521450268004CE427 /* BeaconModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6BA47DD821450EA1004CE427 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DD32144E8E5004CE427 /* BeaconManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		6BA47DD92145126D004CE427 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DDA21451281004CE427 /* BeaconInfoTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6BA47DDC21452714004CE427 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6BA47DDD21452720004CE427 /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		6BCEC41A21429DB3009CAFC0 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +248,8 @@
 			children = (
 				6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */,
 				6BCEC4382142B1E2009CAFC0 /* Library */,
+				6BA47DB82144D9DA004CE427 /* KMB Data */,
+				6BA47DD02144DD9B004CE427 /* iBeacon */,
 				6BCEC47A2142B261009CAFC0 /* Home */,
 				6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */,
 				6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */,
@@ -132,6 +261,7 @@
 		6BCEC4382142B1E2009CAFC0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				6BA47DDC21452714004CE427 /* Helper */,
 				6BCEC4392142B1E2009CAFC0 /* Extension */,
 				6BCEC4402142B1E2009CAFC0 /* Protocol */,
 				6BCEC4422142B1E2009CAFC0 /* Controller */,
@@ -308,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BCEC43121429DB5009CAFC0 /* LaunchScreen.storyboard in Resources */,
+				6BA47DC72144D9DA004CE427 /* kmbData.json in Resources */,
 				6BCEC42E21429DB5009CAFC0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,15 +451,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TEDY-Makeathon-checkManifestLockResult.txt",
 			);
@@ -342,8 +469,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TEDY-Makeathon/Pods-TEDY-Makeathon-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
@@ -351,8 +476,6 @@
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
@@ -371,14 +494,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BCEC46E2142B1E2009CAFC0 /* ScreenSizeManager.swift in Sources */,
+				6BA47DCE2144D9DA004CE427 /* KMBClient.swift in Sources */,
+				6BA47DC92144D9DA004CE427 /* KMBStopsInformationTableViewController.swift in Sources */,
 				6BCEC4722142B1E2009CAFC0 /* PaddingTextField.swift in Sources */,
 				6BCEC4672142B1E2009CAFC0 /* KLPickerViewController.swift in Sources */,
 				6BCEC4772142B1E2009CAFC0 /* KLActivityIndicatorAnimationDelegate.swift in Sources */,
 				6BCEC4752142B1E2009CAFC0 /* KLActivityIndicatorShape.swift in Sources */,
+				6BA47DDB21451281004CE427 /* BeaconInfoTableViewCell.swift in Sources */,
+				6BA47DD621450268004CE427 /* BeaconModel.swift in Sources */,
 				6BCEC4632142B1E2009CAFC0 /* KLTableViewController.swift in Sources */,
 				6BCEC45C2142B1E2009CAFC0 /* UIView.swift in Sources */,
+				6BA47DCF2144D9DA004CE427 /* KMBClientModel.swift in Sources */,
+				6BA47DC82144D9DA004CE427 /* KMBETAClient.swift in Sources */,
 				6BCEC4642142B1E2009CAFC0 /* KLCollectionViewController.swift in Sources */,
 				6BCEC46C2142B1E2009CAFC0 /* VersionManager.swift in Sources */,
+				6BA47DDE21452720004CE427 /* DateHelper.swift in Sources */,
 				6BCEC4792142B227009CAFC0 /* DemoViewController.swift in Sources */,
 				6BCEC4652142B1E2009CAFC0 /* BottomCardViewController.swift in Sources */,
 				6BCEC4732142B1E2009CAFC0 /* CircleImageView.swift in Sources */,
@@ -390,6 +520,11 @@
 				6BCEC46A2142B1E2009CAFC0 /* SharingManager.swift in Sources */,
 				6BCEC45F2142B1E2009CAFC0 /* Layoutable.swift in Sources */,
 				6BCEC4742142B1E2009CAFC0 /* GenericTableViewController.swift in Sources */,
+				6BA47DD22144DDCD004CE427 /* iBeaconViewController.swift in Sources */,
+				6BA47DCB2144D9DA004CE427 /* KMBDataManager.swift in Sources */,
+				6BA47DCA2144D9DA004CE427 /* KMBSearchViewController.swift in Sources */,
+				6BA47DD42144E8E5004CE427 /* BeaconManager.swift in Sources */,
+				6BA47DCD2144D9DA004CE427 /* ETATableViewCell.swift in Sources */,
 				6BCEC47E2142B27B009CAFC0 /* MenuTableViewController.swift in Sources */,
 				6BCEC45D2142B1E2009CAFC0 /* NSLayoutConstraint.swift in Sources */,
 				6BCEC4622142B1E2009CAFC0 /* KLAnimatableProtocol.swift in Sources */,
@@ -401,6 +536,7 @@
 				6BCEC46F2142B1E2009CAFC0 /* PaperSwitch.swift in Sources */,
 				6BCEC4602142B1E2009CAFC0 /* UITableView.swift in Sources */,
 				6BCEC4702142B1E2009CAFC0 /* LargeTitleTableViewCell.swift in Sources */,
+				6BA47DCC2144D9DA004CE427 /* KMBData.swift in Sources */,
 				6BCEC4662142B1E2009CAFC0 /* KLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
