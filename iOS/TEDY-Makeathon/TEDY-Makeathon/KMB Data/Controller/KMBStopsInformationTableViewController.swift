@@ -42,6 +42,7 @@ class KMBStopsInformationTableViewController: KLTableViewController {
         super.viewDidLoad()
         
         tableView.register(ETATableViewCell.self)
+        title = "往 " + service.basicInfo.destinationName
     }
     
     // MARK: - Table view data source
@@ -71,7 +72,13 @@ class KMBStopsInformationTableViewController: KLTableViewController {
             cell.etaLabel.textColor = .red
         }
         
-        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let stop = service.routeStops[indexPath.row]
+        SoundHelper.shared.speak(stop.cName)
     }
 }

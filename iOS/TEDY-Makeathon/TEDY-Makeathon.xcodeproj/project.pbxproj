@@ -21,6 +21,7 @@
 		6BA47DD621450268004CE427 /* BeaconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DD521450268004CE427 /* BeaconModel.swift */; };
 		6BA47DDB21451281004CE427 /* BeaconInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DDA21451281004CE427 /* BeaconInfoTableViewCell.swift */; };
 		6BA47DDE21452720004CE427 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DDD21452720004CE427 /* DateHelper.swift */; };
+		6BCA52EF214A917200F15E8F /* SoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA52EE214A917200F15E8F /* SoundHelper.swift */; };
 		6BCEC42721429DB3009CAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */; };
 		6BCEC42E21429DB5009CAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */; };
 		6BCEC43121429DB5009CAFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCEC42F21429DB5009CAFC0 /* LaunchScreen.storyboard */; };
@@ -73,6 +74,7 @@
 		6BA47DD521450268004CE427 /* BeaconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconModel.swift; sourceTree = "<group>"; };
 		6BA47DDA21451281004CE427 /* BeaconInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconInfoTableViewCell.swift; sourceTree = "<group>"; };
 		6BA47DDD21452720004CE427 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		6BCA52EE214A917200F15E8F /* SoundHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundHelper.swift; sourceTree = "<group>"; };
 		6BCEC42321429DB3009CAFC0 /* TEDY-Makeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEDY-Makeathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BCEC42D21429DB5009CAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				6BA47DDD21452720004CE427 /* DateHelper.swift */,
+				6BCA52EE214A917200F15E8F /* SoundHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				6BA47DC82144D9DA004CE427 /* KMBETAClient.swift in Sources */,
 				6BCEC4642142B1E2009CAFC0 /* KLCollectionViewController.swift in Sources */,
 				6BCEC46C2142B1E2009CAFC0 /* VersionManager.swift in Sources */,
+				6BCA52EF214A917200F15E8F /* SoundHelper.swift in Sources */,
 				6BA47DDE21452720004CE427 /* DateHelper.swift in Sources */,
 				6BCEC4792142B227009CAFC0 /* DemoViewController.swift in Sources */,
 				6BCEC4652142B1E2009CAFC0 /* BottomCardViewController.swift in Sources */,

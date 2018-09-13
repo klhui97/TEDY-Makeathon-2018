@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     
@@ -20,7 +21,8 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "KMB Data"
+        title = "路線搜尋"
+        tableView.rowHeight = 100
         
         // Load the shared data first
         print(KMBDataManager.shared.getKmbData)
@@ -45,6 +47,10 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
         return 1
     }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let targetRouteData = targetRouteData {
             return targetRouteData.services.count
@@ -54,13 +60,14 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return targetRouteData?.route ?? "Please enter a correct route number."
+        return targetRouteData?.route ?? "請輸入巴士號碼"
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
         cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.regular)
         
         if let service = targetRouteData?.services[indexPath.row] {
             if service.serviceType == "1" {
