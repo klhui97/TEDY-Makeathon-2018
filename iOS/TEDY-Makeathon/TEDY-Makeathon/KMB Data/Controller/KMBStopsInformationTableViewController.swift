@@ -80,5 +80,6 @@ class KMBStopsInformationTableViewController: KLTableViewController {
         
         let stop = service.routeStops[indexPath.row]
         SoundHelper.shared.speak(stop.cName)
+        navigationController?.pushViewController(WaitingBusViewController(stop: stop), animated: true)
     }
 }
