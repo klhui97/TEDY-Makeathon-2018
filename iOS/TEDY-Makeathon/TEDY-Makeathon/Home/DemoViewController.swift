@@ -22,15 +22,13 @@ class DemoViewController: KLViewController, MenuTableViewControllerDelegate {
     
     // MARK: - Init
     private func initNavigation() {
-        title = "Home"
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: Icon.menu, style: .plain, target: self, action: #selector(showMenu))
+        navigationItem.leftBarButtonItem?.accessibilityValue = "選單"
         
         navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationItem.largeTitleDisplayMode = .always
         navigationController?.view.backgroundColor = .white
         navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.accessibilityHint = ""
     }
     
     @objc func showMenu() {

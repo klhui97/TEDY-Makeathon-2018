@@ -52,6 +52,10 @@ struct KMBData: Codable {
         var stopSeq: String
         var eta: [KMBETAClient.EtaData]?
         
+        var accessibilityName: String {
+            return "往: " + cName
+        }
+        
         enum CodingKeys: String, CodingKey {
             case cName = "CName"
             case serviceType = "ServiceType"

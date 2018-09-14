@@ -11,6 +11,7 @@ import AVFoundation
 
 class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     
+    var header = ""
     let searchController = UISearchController(searchResultsController: nil)
     var targetRouteData: KMBData? {
         didSet {
@@ -21,7 +22,7 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "路線搜尋"
+        header = "路線搜尋"
         tableView.rowHeight = 100
         
         // Load the shared data first
@@ -30,7 +31,6 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        
     }
     
     // MARK: - UISearchBarDelegate
@@ -60,7 +60,7 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return targetRouteData?.route ?? "請輸入巴士號碼"
+        return targetRouteData?.route ?? header
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

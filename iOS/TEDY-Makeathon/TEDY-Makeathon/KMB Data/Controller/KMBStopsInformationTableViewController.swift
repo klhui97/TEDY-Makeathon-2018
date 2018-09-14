@@ -10,6 +10,7 @@ import UIKit
 
 class KMBStopsInformationTableViewController: KLTableViewController {
     
+    var header = ""
     var service: KMBData.Service
     
     init(service: KMBData.Service) {
@@ -42,7 +43,7 @@ class KMBStopsInformationTableViewController: KLTableViewController {
         super.viewDidLoad()
         
         tableView.register(ETATableViewCell.self)
-        title = "往 " + service.basicInfo.destinationName
+        header = "往 " + service.basicInfo.destinationName
     }
     
     // MARK: - Table view data source
@@ -55,31 +56,54 @@ class KMBStopsInformationTableViewController: KLTableViewController {
         return service.routeStops.count
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return header
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ETATableViewCell = tableView.dequeueReusableCell(for: indexPath)
         let stop = service.routeStops[indexPath.row]
         
-        cell.stopNameLabel.text = stop.cName
+        cell.stopNameLabel.text = stop.accessibilityName
         if let etas = service.routeStops[indexPath.row].eta {
+            
             var etaString = ""
-            for eta in etas {
-                etaString += eta.etaDisplayString + "\n"
+            for (i, eta) in etas.enumerated() {
+                if eta.etaDisplayString == "尾班車已過本站" {
+                     etaString += eta.etaDisplayString + "\n"
+                }else {
+                    etaString += "第\(String(i + 1))班 " + eta.etaDisplayString + "\n"
+                }
             }
             cell.etaLabel.text = etaString
+            cell.accessibilityHint = "如果要去坐呢班車去\(stop.cName)，請再按下"
             cell.etaLabel.textColor = .black
         }else {
-            cell.etaLabel.text = "沒有數據"
+            cell.etaLabel.text = "沒有數據或不經此站"
             cell.etaLabel.textColor = .red
         }
         
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         let stop = service.routeStops[indexPath.row]
-        SoundHelper.shared.speak(stop.cName)
-        navigationController?.pushViewController(WaitingBusViewController(stop: stop), animated: true)
+        
+        if tableView.indexPathForSelectedRow == indexPath {
+            tableView.deselectRow(at: indexPath, animated: true)
+            navigationController?.pushViewController(WaitingBusViewController(stop: stop), animated: true)
+            return nil
+        }else {
+            if let oldSelectedIndexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: oldSelectedIndexPath, animated: true)
+            }
+            SoundHelper.shared.speak(stop.accessibilityName + " 如果要搭呢班車請再按一下")
+        }
+        
+        return indexPath
     }
 }

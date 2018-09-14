@@ -43,31 +43,41 @@ extension KMBETAClient {
     struct EtaData: Codable {
         var etaDisplayString: String {
             if let remindingArrivalTime = remindingArrivalTime {
-                return remindingArrivalTime + "  /  " + detailArrivalTime
+                return remindingArrivalTime
             }else {
-                return shortArrivalTime + "  /  " + detailArrivalTime
+                return shortArrivalTime
             }
             
         }
         var detailArrivalTime: String
         var shortArrivalTime: String
+        var remainingTime: DateHelper.Time? {
+            get {
+                guard shortArrivalTime != "尾班車已過本站" else { return nil}
+                if let arrivalDate = DateHelper.stringToDate(dateString: detailArrivalTime) {
+                    return DateHelper.timeDifferent(from: DateHelper.now, to: arrivalDate)
+                }else {
+                    return nil
+                }
+            }
+        }
         
         var remindingArrivalTime: String? {
-            if let arrivalDate = DateHelper.stringToDate(dateString: detailArrivalTime) {
-                if let remainingTime = DateHelper.timeDifferent(from: DateHelper.now, to: arrivalDate) {
-                    var expression: String = "仲有: "
-                    if remainingTime.hour != 0 {
-                        expression += String(remainingTime.hour) + "小時"
-                    }
-                    if remainingTime.minute != 0 {
-                        expression += String(remainingTime.minute) + "分鐘"
-                    }
-                    if remainingTime.second != 0 {
-                        expression += String(remainingTime.second) + "秒"
-                    }
-                    expression += "到達"
-                    return expression
+            guard shortArrivalTime != "尾班車已過本站" else { return nil}
+            if let remainingTime = remainingTime {
+                var expression: String = "仲有: "
+                if remainingTime.hour != 0 {
+                    expression += String(remainingTime.hour) + "小時"
                 }
+                if remainingTime.minute != 0 {
+                    expression += String(remainingTime.minute) + "分鐘"
+                }
+                if remainingTime.second != 0 {
+                    expression += String(remainingTime.second) + "秒"
+                }
+                expression += "到達"
+                return expression
+                
             }
             return nil
         }
