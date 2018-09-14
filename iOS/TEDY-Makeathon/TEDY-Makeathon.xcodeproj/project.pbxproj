@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3437D1DD214B7E130073BD9A /* SpeechRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437D1DC214B7E120073BD9A /* SpeechRecognitionViewController.swift */; };
 		6BA47DC72144D9DA004CE427 /* kmbData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA47DB92144D9DA004CE427 /* kmbData.json */; };
 		6BA47DC82144D9DA004CE427 /* KMBETAClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBB2144D9DA004CE427 /* KMBETAClient.swift */; };
 		6BA47DC92144D9DA004CE427 /* KMBStopsInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA47DBD2144D9DA004CE427 /* KMBStopsInformationTableViewController.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3437D1DC214B7E120073BD9A /* SpeechRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionViewController.swift; sourceTree = "<group>"; };
 		6BA47DB92144D9DA004CE427 /* kmbData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kmbData.json; sourceTree = "<group>"; };
 		6BA47DBB2144D9DA004CE427 /* KMBETAClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBETAClient.swift; sourceTree = "<group>"; };
 		6BA47DBD2144D9DA004CE427 /* KMBStopsInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMBStopsInformationTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3437D1DB214B7E120073BD9A /* Speech Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				3437D1DC214B7E120073BD9A /* SpeechRecognitionViewController.swift */,
+			);
+			path = "Speech Recognition";
+			sourceTree = "<group>";
+		};
 		6BA47DB82144D9DA004CE427 /* KMB Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +275,7 @@
 				6BCEC42621429DB3009CAFC0 /* AppDelegate.swift */,
 				6BCEC4382142B1E2009CAFC0 /* Library */,
 				6BCA52F0214ABEB700F15E8F /* Waiting */,
+				3437D1DB214B7E120073BD9A /* Speech Recognition */,
 				6BA47DB82144D9DA004CE427 /* KMB Data */,
 				6BA47DD02144DD9B004CE427 /* iBeacon */,
 				6BCEC47A2142B261009CAFC0 /* Home */,
@@ -524,6 +535,7 @@
 				6BCEC45C2142B1E2009CAFC0 /* UIView.swift in Sources */,
 				6BA47DCF2144D9DA004CE427 /* KMBClientModel.swift in Sources */,
 				6BA47DC82144D9DA004CE427 /* KMBETAClient.swift in Sources */,
+				3437D1DD214B7E130073BD9A /* SpeechRecognitionViewController.swift in Sources */,
 				6BCEC4642142B1E2009CAFC0 /* KLCollectionViewController.swift in Sources */,
 				6BCEC46C2142B1E2009CAFC0 /* VersionManager.swift in Sources */,
 				6BCA52EF214A917200F15E8F /* SoundHelper.swift in Sources */,

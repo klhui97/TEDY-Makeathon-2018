@@ -21,6 +21,8 @@ private extension MenuTableViewController {
             return iBeaconViewController()
         case .kmb:
             return KMBSearchViewController()
+        case .speech:
+            return SpeechRecognitionViewController()
         }
     }
 }
@@ -31,9 +33,10 @@ class MenuTableViewController: KLTableViewController {
     enum Row: String {
         case iBeacon = "iBeacon"
         case kmb = "KMB"
+        case speech = "Speech"
     }
     
-    var rows: [Row] = [.iBeacon, .kmb]
+    var rows: [Row] = [.iBeacon, .kmb, .speech]
     var delegate: MenuTableViewControllerDelegate?
     
     // MARK: - Life cycle

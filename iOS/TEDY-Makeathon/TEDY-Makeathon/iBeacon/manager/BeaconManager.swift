@@ -57,7 +57,7 @@ extension BeaconManager: CLLocationManagerDelegate {
     
     func handleBeaconInfo(_ beacon: CLBeacon) {
         if let targetIndex = targetBeacons.index(where: { $0.uuid ==  beacon.proximityUUID} ) {
-            let lastUpdateString = DateHelper.getCurrentTime()
+            let lastUpdateString = DateHelper.currentTimeString()
             
             switch beacon.proximity {
             case .unknown:
