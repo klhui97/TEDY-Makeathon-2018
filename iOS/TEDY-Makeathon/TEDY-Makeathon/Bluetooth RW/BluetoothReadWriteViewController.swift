@@ -64,7 +64,8 @@ class BluetoothReadWriteViewController: KLViewController {
         
         let centralQueue: DispatchQueue = DispatchQueue(label: "com.iosbrain.centralQueueName", attributes: .concurrent)
         centralManager = CBCentralManager(delegate: self, queue: centralQueue)
-        button28.addTarget(self, action: #selector(sendValue), for: UIControlEvents())
+        button28.addTarget(self, action: #selector(sendValue), for: .touchUpInside)
+        button35.addTarget(self, action: #selector(sendValue), for: .touchUpInside)
         
         setupAutoLayout()
     }
