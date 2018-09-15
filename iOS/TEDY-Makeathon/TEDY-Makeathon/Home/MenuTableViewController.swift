@@ -23,6 +23,8 @@ private extension MenuTableViewController {
             return KMBSearchViewController()
         case .speech:
             return SpeechRecognitionViewController()
+        case .bt:
+            return BluetoothReadWriteViewController()
         }
     }
 }
@@ -34,9 +36,10 @@ class MenuTableViewController: KLTableViewController {
         case iBeacon = "iBeacon"
         case kmb = "KMB"
         case speech = "Speech"
+        case bt = "Bluetooth"
     }
     
-    var rows: [Row] = [.iBeacon, .kmb, .speech]
+    var rows: [Row] = [.iBeacon, .kmb, .speech, .bt]
     var delegate: MenuTableViewControllerDelegate?
     
     // MARK: - Life cycle
