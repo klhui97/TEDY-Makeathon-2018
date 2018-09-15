@@ -63,6 +63,11 @@ class WaitingBusViewController: KLViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapTitle)))
+        titleLabel.isUserInteractionEnabled = true
+        remainingTimeLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapRemainingTimeLabel)))
+        remainingTimeLabel.isUserInteractionEnabled = true
+        
         titleLabel.text = "往: " + stop.cName
         updateRemainingTimeLabel(showTips: true)
         
@@ -84,7 +89,6 @@ class WaitingBusViewController: KLViewController {
             if let remainingTime = stopEta[0].remainingTime {
                 if remainingTime.minute > 0 {
                     remainingTimeLabel.text = String(remainingTime.minute) + "分鐘" + String(remainingTime.second) + "秒"
-                    remainingTimeLabel.accessibilityHint = "後到達"
                 }else if remainingTime.second > 0 {
                     // Almost arrived
                     if showTips {
@@ -92,14 +96,22 @@ class WaitingBusViewController: KLViewController {
                         navigationController?.pushViewController(BusNumberViewController(), animated: true)
                     }
                     remainingTimeLabel.text = String(remainingTime.second) + "秒"
-                    remainingTimeLabel.accessibilityHint = "巴士一分鐘內會到達"
                 }else {
                     // Already arrived
-                    remainingTimeLabel.text = "到達"
-                    remainingTimeLabel.accessibilityHint = "巴士即將到站或已離開"
+                    remainingTimeLabel.text = "巴士即將到站或已離開"
                 }
             }
         }
+    }
+    
+    @objc func didTapRemainingTimeLabel() {
+        if let remainingString = remainingTimeLabel.text {
+            SoundHelper.shared.speak("仲有大概 " + remainingString + "到達")
+        }
+    }
+    
+    @objc func didTapTitle() {
+        SoundHelper.shared.speak(titleLabel.text ?? "")
     }
     
     @objc func updateLabelOnly() {

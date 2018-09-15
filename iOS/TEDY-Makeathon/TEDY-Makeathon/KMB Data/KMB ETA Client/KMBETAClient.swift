@@ -45,7 +45,7 @@ extension KMBETAClient {
             if let remindingArrivalTime = remindingArrivalTime {
                 return remindingArrivalTime
             }else {
-                return shortArrivalTime
+                return "即將到達/已離開"
             }
             
         }
@@ -65,6 +65,7 @@ extension KMBETAClient {
         var remindingArrivalTime: String? {
             guard shortArrivalTime != "尾班車已過本站" else { return nil}
             if let remainingTime = remainingTime {
+                guard remainingTime.hour >= 0, remainingTime.minute >= 0, remainingTime.second >= 0 else { return nil }
                 var expression: String = "仲有: "
                 if remainingTime.hour != 0 {
                     expression += String(remainingTime.hour) + "小時"

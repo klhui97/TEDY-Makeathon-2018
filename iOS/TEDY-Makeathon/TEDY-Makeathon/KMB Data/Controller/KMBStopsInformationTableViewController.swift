@@ -101,7 +101,7 @@ class KMBStopsInformationTableViewController: KLTableViewController {
             if let oldSelectedIndexPath = tableView.indexPathForSelectedRow {
                 tableView.deselectRow(at: oldSelectedIndexPath, animated: true)
             }
-            SoundHelper.shared.speak(stop.accessibilityName + " 如果要搭呢班車請再按一下")
+            SoundHelper.shared.speak(stop.accessibilityArraivalString + " 如果要搭呢班車請再按一下")
         }
         
         return indexPath

@@ -56,6 +56,18 @@ struct KMBData: Codable {
             return "往: " + cName
         }
         
+        var accessibilityArraivalString: String {
+            if let eta = eta, eta.count > 0 {
+                if let tips = eta[0].remindingArrivalTime {
+                    return accessibilityName + " 最快既到站時間係" + tips
+                }else {
+                    return accessibilityName + " 既車即將到達或已經離開"
+                }
+            }else {
+                return " 沒有第一班車到達時間數據"
+            }
+        }
+        
         enum CodingKeys: String, CodingKey {
             case cName = "CName"
             case serviceType = "ServiceType"

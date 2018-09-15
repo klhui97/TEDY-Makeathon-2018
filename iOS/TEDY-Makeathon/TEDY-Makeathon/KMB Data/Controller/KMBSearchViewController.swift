@@ -87,11 +87,23 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         
-        if let service = targetRouteData?.services[indexPath.row] {
-            navigationController?.pushViewController(KMBStopsInformationTableViewController(service: service), animated: true)
+        guard let service = targetRouteData?.services[indexPath.row] else {
+            return nil
         }
+        
+        if tableView.indexPathForSelectedRow == indexPath {
+            navigationController?.pushViewController(KMBStopsInformationTableViewController(service: service), animated: true)
+        }else {
+            if let oldSelectedIndexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: oldSelectedIndexPath, animated: true)
+            }
+            SoundHelper.shared.speak("路線\(service.bound):  由 \(service.basicInfo.originName) 出發至 \(service.basicInfo.destinationName)" + "如果要搭呢條路線請再按下")
+            return indexPath
+        }
+        
+        
+        return nil
     }
 }
