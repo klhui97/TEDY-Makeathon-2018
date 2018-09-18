@@ -9,8 +9,6 @@
 import UIKit
 
 protocol KLAnimatableProtocol {
-    var center: CGPoint { get }
-    var layer: CALayer { get }
 }
 
 extension KLAnimatableProtocol where Self: UIView {
