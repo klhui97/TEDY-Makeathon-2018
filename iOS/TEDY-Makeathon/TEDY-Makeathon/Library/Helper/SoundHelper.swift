@@ -21,7 +21,16 @@ class SoundHelper {
     
     func speak(_ text: String) {
         let speechUtterance = AVSpeechUtterance(string: text)
-        speechUtterance.voice  = AVSpeechSynthesisVoice(language: "zh-HK")
+        let voice = AVSpeechSynthesisVoice.speechVoices().first { (voice) -> Bool in
+            return voice.language == "zh-HK" && voice.quality == AVSpeechSynthesisVoiceQuality.enhanced
+            }
+        if let voice = voice {
+            print("\(voice.name) selected as voice for uttering speeches. Quality: \(voice.quality.rawValue)")
+            speechUtterance.voice  = voice
+        }else {
+            speechUtterance.voice  = AVSpeechSynthesisVoice(language: "zh-HK")
+        }
+        
         speechSynthesizer.speak(speechUtterance)
     }
 }

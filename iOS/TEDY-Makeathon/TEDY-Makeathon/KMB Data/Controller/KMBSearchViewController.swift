@@ -99,7 +99,12 @@ class KMBSearchViewController: KLTableViewController, UISearchBarDelegate {
             if let oldSelectedIndexPath = tableView.indexPathForSelectedRow {
                 tableView.deselectRow(at: oldSelectedIndexPath, animated: true)
             }
-            SoundHelper.shared.speak("路線\(service.bound):  由 \(service.basicInfo.originName) 出發至 \(service.basicInfo.destinationName)" + "如果要搭呢條路線請再按下")
+            if service.serviceType == "1" {
+                SoundHelper.shared.speak("路線\(service.bound):  由 \(service.basicInfo.originName) 出發至 \(service.basicInfo.destinationName)" + "如果要搭呢條路線請再按下")
+            }else {
+                SoundHelper.shared.speak("特別線:  由 \(service.basicInfo.originName) 出發至 \(service.basicInfo.destinationName)" + "如果要搭呢條路線請再按下")
+            }
+            
             return indexPath
         }
         
